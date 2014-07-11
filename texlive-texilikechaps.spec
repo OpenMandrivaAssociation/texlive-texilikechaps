@@ -6,7 +6,7 @@
 # catalog-version 1.0a
 Name:		texlive-texilikechaps
 Version:	1.0a
-Release:	6
+Release:	7
 Summary:	Format chapters with a texi-like format
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/misc/texilikechaps.sty
