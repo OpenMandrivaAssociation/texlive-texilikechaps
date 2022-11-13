@@ -1,17 +1,11 @@
-# revision 28553
-# category Package
-# catalog-ctan /macros/latex/contrib/misc/texilikechaps.sty
-# catalog-date 2012-12-16 19:31:26 +0100
-# catalog-license lppl
-# catalog-version 1.0a
 Name:		texlive-texilikechaps
-Version:	1.0a
-Release:	10
+Version:	28553
+Release:	1
 Summary:	Format chapters with a texi-like format
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/misc/texilikechaps.sty
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texilikechaps.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texilikechaps.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ smaller format. Details of the format may be controlled with
 internal commands.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -37,7 +31,7 @@ internal commands.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
