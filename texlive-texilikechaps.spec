@@ -3,7 +3,7 @@ Version:	28553
 Release:	2
 Summary:	Format chapters with a texi-like format
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/misc/texilikechaps.sty
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/misc/texilikechaps.sty
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texilikechaps.r%{version}.tar.xz
 BuildArch:	noarch
